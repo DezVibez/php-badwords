@@ -1,6 +1,6 @@
 <?php 
 
-$my_text = "non dire cavolate mai più."  
+$my_text = 'non dire cavolate mai più.'  ;
 
 
 $censura = $_GET['name'];
@@ -21,7 +21,7 @@ $testo_censurato = str_replace($censura, "***", $my_text);
         <div>
             <p>
               <h2>Testo non censurato: <?= $my_text ?> </h2>
-              <span>lunghezza Paragrafo:</span> <?php echo strlen($my_text)?></div>
+              <span>lunghezza Paragrafo:</span> <?php echo strlen($my_text);?>
             </p>
         </div>
     
@@ -29,7 +29,7 @@ $testo_censurato = str_replace($censura, "***", $my_text);
         <div>
             <p>
             <h2>Testo censurato:<?= $testo_censurato ?> </h2>
-            <span>lunghezza Paragrafo:</span> <?php echo strlen($my_text)?></div>
+            <span>lunghezza Paragrafo:</span> <?php echo strlen($my_text);?>
             </p>
     
         </div>
